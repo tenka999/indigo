@@ -6,6 +6,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 import HeroSection from "./section/HeroSection";
+import AboutSection from "./section/AboutSection";
 gsap.registerPlugin(ScrollTrigger);
 // import { ReactComponent as Logo } from "/layout/background/svg-path.svg";
 
@@ -14,6 +15,7 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
+      <AboutSection />
     </>
   );
 }
