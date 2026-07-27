@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.view-section {
+  background-color: rgb(196, 196, 196);
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  height: 345vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.view-detail {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 2rem;
+  height: 50vh;
+  width: 100%;
+}
+
+.view-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 50px;
+  color: rgb(10, 10, 10);
+  font-weight: 900;
+}
+
+.view-tagline {
+  font-family: "space grotesk", sans-serif;
+  font-size: 26px;
+  color: #e30613;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.view-paragraph-container {
+  padding-right: 20rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.view-paragraph {
+  margin-top: 5px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(10, 10, 10, 0.658);
+}
+
+.view-content {
+  background-color: rgb(196, 196, 196);
+  width: 100%;
+  height: 200vh;
+  padding: 35px;
+}
+
+.view-img-container {
+  position: relative;
+  background-color: blue;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.view-image {
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
+
+.view-image.night {
+  opacity: 0;
+}
+
+.view-image-night {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  object-fit: cover;
+  margin-top: 50px;
+}

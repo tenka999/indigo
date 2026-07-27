@@ -1,0 +1,83 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+enum KategoriProyek {
+  Residential
+  Commercial
+  Installation
+}
+
+enum TipeMedia {
+  Portrait
+  Landscape
+}
+
+enum RencanaAnggaran {
+  Under_500M
+  Between_500M_1B
+  Over_1B
+}
+
+model User {
+  id           Int        @id @default(autoincrement())
+  username     String     @unique
+  email        String     @unique
+  password     String
+  nama         String
+
+  createdAt    DateTime   @default(now())
+}
+
+model DataProyek {
+  id         Int            @id @default(autoincrement())
+  namaProyek String
+  deskripsi  String         @db.Text 
+  kategori   KategoriProyek
+
+  luasBangunan   Float
+  lokasiKota     String
+  tanggalMulai   DateTime
+  tanggalSelesai DateTime
+
+  // Relasi ke Media
+  media Media[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Media {
+  id           Int       @id @default(autoincrement())
+  dataProyekId Int
+  url          String    @db.Text
+  tipeMedia    TipeMedia
+
+  dataProyek DataProyek @relation(fields: [dataProyekId], references: [id], onDelete: Cascade)
+}
+
+model FormulirKontak {
+  id              Int             @id @default(autoincrement())
+  namaLengkap     String
+  email           String
+  telepon         String
+  rencanaAnggaran RencanaAnggaran 
+  pesan           String          @db.Text
+
+  createdAt DateTime @default(now())
+}
+
+model StudioProfile {
+  id             Int    @id @default(1) 
+  namaStudio     String @default("SUMBU")
+  tagline        String 
+  tentangStudio  String @db.Text
+  alamatKantor   String @db.Text
+  linkInstagram  String?
+  nomorWhatsApp  String
+  emailKontak    String
+}
