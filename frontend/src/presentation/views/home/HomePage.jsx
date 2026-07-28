@@ -18,6 +18,7 @@ gsap.registerPlugin(MorphSVGPlugin, ScrollTrigger);
 export default function HomePage() {
   return (
     <>
+      <Navbar />
       <HeroSection />
       <AboutSection />
       <WorkSection />

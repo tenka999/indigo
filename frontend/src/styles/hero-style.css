@@ -25,6 +25,7 @@
 .hero-top {
   position: relative;
   gap: 10px;
+  padding-top: 4rem;
   flex-direction: column;
 }
 
