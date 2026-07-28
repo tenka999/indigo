@@ -10,6 +10,7 @@ import AboutSection from "./section/AboutSection";
 import WorkSection from "./section/WorkSection";
 import ServiceSection from "./section/ServiceSection";
 import CtaSection from "./section/CtaSection";
+import Footer from "./layout/Footer";
 gsap.registerPlugin(ScrollTrigger);
 // import { ReactComponent as Logo } from "/layout/background/svg-path.svg";
 
@@ -22,6 +23,7 @@ export default function HomePage() {
       <WorkSection />
       <ServiceSection />
       <CtaSection />
+      <Footer />
     </>
   );
 }
