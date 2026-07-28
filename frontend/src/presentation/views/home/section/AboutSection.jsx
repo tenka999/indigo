@@ -19,8 +19,8 @@ export default function AboutSection() {
                   <path
                     d="M2 4H78"
                     stroke="currentColor"
-                    stroke-width="4"
-                    stroke-linecap="round"
+                    strokeWidth="4"
+                    strokeLinecap="round"
                   />
                 </svg>{" "}
                 capital have been raised after collaboration
@@ -48,9 +48,9 @@ export default function AboutSection() {
                   <path
                     d="M5 12H19M19 12L13 6M19 12L13 18"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </div>

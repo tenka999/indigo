@@ -17,8 +17,8 @@ export default function WorkSection() {
                 <path
                   d="M2 4H78"
                   stroke="currentColor"
-                  stroke-width="4"
-                  stroke-linecap="round"
+                  strokeWidth="4"
+                  strokeLinecap="round"
                 />
               </svg>{" "}
               Simplicity isn't the lack of clutter, it's the presence of
