@@ -7,7 +7,7 @@ const products = [
   {
     name: "KTWO",
     price: "$120",
-    image: "/layout/background/hero-tumbler.png",
+    image: "/layout/background/product-img.png",
     color: "#4562ff",
     description:
       "Streamlined body designed to fit bike cages and running vests. Double-wall vacuum insulation keeps liquid ice-cold without adding extra weight to your stride.",
@@ -15,7 +15,7 @@ const products = [
   {
     name: "KOTKA",
     price: "$120",
-    image: "/layout/background/hero-tumbler.png",
+    image: "/layout/background/product-img.png",
     description:
       "The core daily driver. Featuring a high-impact rubber base, wide-mouth opening for easy ice filling, and an ergonomic sweat-proof grip.",
 
@@ -24,7 +24,7 @@ const products = [
   {
     name: "KARIBA",
     price: "$120",
-    image: "/layout/background/hero-tumbler.png",
+    image: "/layout/background/product-img.png",
     description:
       "Maximum hydration for long sessions in harsh conditions. Reinforced steel body made to withstand accidental drops, rugged rocks, and heavy pack storage.",
 
@@ -33,7 +33,7 @@ const products = [
   {
     name: "FLOW",
     price: "$120",
-    image: "/layout/background/hero-tumbler.png",
+    image: "/layout/background/product-img.png",
     description:
       "Maximum hydration for long sessions in harsh conditions. Reinforced steel body made to withstand accidental drops, rugged rocks, and heavy pack storage.",
 
@@ -42,7 +42,7 @@ const products = [
   {
     name: "NOVA",
     price: "$120",
-    image: "/layout/background/hero-tumbler.png",
+    image: "/layout/background/product-img.png",
     description:
       "Maximum hydration for long sessions in harsh conditions. Reinforced steel body made to withstand accidental drops, rugged rocks, and heavy pack storage.",
 
